@@ -1,0 +1,31 @@
+// MGT BASYS APPLICATION - TEMPLATES/MAIN.SASS
+// Author: GRAYBOX
+// Description: Main template styles
+
+@import 'header'
+@import 'featured'
+@import 'about'
+@import 'works'
+@import 'contact'
+
+body.mobile-active
+  overflow-x: hidden
+
+  .overlay
+    background-color: $black
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 9999
+    opacity: .97
+
+header, section
+  margin: 0 auto
+  padding: 25px 5%
+
+  @media only screen and (max-width: $break-small-mid)
+    padding: 2% 5%
+
+section *
+  transition: .2s all ease
+

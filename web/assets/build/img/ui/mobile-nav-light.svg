@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="10px" viewBox="0 0 40 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>mobile-nav</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile-nav" fill-rule="nonzero">
+            <path d="M5,0 C2.237,0 0,2.237 0,5 C0,7.763 2.237,10 5,10 C7.762,10 10,7.763 10,5 C10,2.237 7.762,0 5,0 Z" id="Shape" fill="#FFFFFF"></path>
+            <path d="M20,0 C17.237,0 15,2.237 15,5 C15,7.763 17.237,10 20,10 C22.763,10 25,7.763 25,5 C25,2.237 22.762,0 20,0 Z" id="Shape" fill="#FCBA04"></path>
+            <path d="M35,0 C32.237,0 30,2.237 30,5 C30,7.763 32.237,10 35,10 C37.762,10 40,7.763 40,5 C40,2.237 37.762,0 35,0 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

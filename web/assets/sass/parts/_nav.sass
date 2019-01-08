@@ -1,0 +1,152 @@
+// MGT BASYS APPLICATION - PARTS/PARTS.SASS
+// Author: GRAYBOX
+// Description: part include file.
+
+nav.sticky
+  position: fixed
+  z-index: 99999
+  top: 0
+  padding-left: 5%
+  padding-right: 5%
+  padding-top: 10px
+  left: 0
+  width: 100% !important
+  background: $black
+  border-bottom: 2px solid $yellow
+  animation-name: fade-bg
+
+  .mobile-nav-dark
+    display: none
+
+  .mobile-nav-light
+    @media only screen and (max-width: $break-mid-large)
+      display: block
+
+  @media only screen and (max-width: $break-mid-large)
+    padding-bottom: 10px
+
+
+  .close
+    right: 65px!important
+    top: 30px !important
+
+  .navbar
+    top: -10px !important
+
+  .logo
+    color: #fff
+
+    &:hover
+      color: #FFF
+
+  ul
+    li
+      a
+        color: #FFF
+        text-shadow: none
+
+#nav
+  width: 100% !important
+
+nav
+  position: relative
+  top: 0
+  padding-top: 10px
+  left: 0
+  background: transparent
+  animation-duration: .2s
+
+  &.active
+
+    ul.navbar
+      @media only screen and (max-width: $break-mid-large)
+        top: -30px
+
+  .mobile-nav-light
+    display: none
+
+  @media only screen and (max-width: $break-small-mid)
+    height: 60px
+
+  .logo
+    font-size: 2em
+
+    @media only screen and (max-width: $break-small-mid)
+      font-size: 140%
+      position: relative
+      top: 3px
+
+    &:hover
+      text-decoration: none
+      color: $black
+
+    em
+      color: $yellow
+      font-weight: 500
+
+  .navbar
+    float: right
+    text-align: right
+
+    &.closed
+      @media only screen and (max-width: $break-mid-large)
+        display: none
+
+    @media only screen and (max-width: $break-mid-large)
+      LEFT: -6%
+      WIDTH: 112%
+      BACKGROUND-COLOR: rgba(0,0,0,.9)
+      TOP: -10PX
+      HEIGHT: 1000PX
+      display: block
+      position: absolute
+      z-index: 9999
+      text-align: center
+      padding-top: 80px
+
+      .close
+        position: absolute
+        top: 50px
+        right: 40px
+        color: #FFF
+        font-weight: 800
+        font-size: 1.6em
+
+      li
+        display: block
+
+        a
+          @include header-1
+          color: $off-white
+          font-size: 2em
+
+  ul
+    margin-left: 0
+    margin-bottom: 0
+
+
+    li
+      display: inline-block
+      list-style-type: none
+      padding: 6px 30px 15px 10px
+      overflow: hidden
+
+      &:last-of-type
+        padding-right: 0
+
+      a
+        text-shadow: 1px 1px 3px #FFF
+        @include nav
+
+
+  .mobile-nav
+    float: right
+    padding-top: 16px
+
+
+@keyframes fade-bg
+  0%
+    background-color: transparent
+
+  100%
+    background-color: $black

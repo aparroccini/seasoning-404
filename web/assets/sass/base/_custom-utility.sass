@@ -1,0 +1,130 @@
+// MGT BASYS APPLICATION - BASE/CUSTOM-UTILITY.SASS
+// Author: GRAYBOX
+// Description: GLOBAL PLUG/PLAY UTILITY CLASSES.
+
+// padding classes
+
+.padding-bottom-10
+  padding-bottom: 10px
+
+.padding-bottom-20
+  padding-bottom: 20px
+
+.padding-bottom-25
+  padding-bottom: 25px
+
+.padding-top-25
+  padding-top: 25px
+
+.padding-bottom-50
+  padding-bottom: 50px
+
+.padding-bottom-80
+  padding-bottom: 80px
+
+.padding-top-10
+  padding-top: 10px
+
+.padding-top-15
+  padding-top: 15px
+
+.padding-bottom-15
+  padding-bottom: 15px
+
+.padding-top-20
+  padding-top: 20px
+
+.padding-top-50
+  padding-top: 50px
+
+.padding-top-80
+  padding-top: 80px
+
+// hide-show classes
+
+.show-only-small
+  display: none
+
+  @media only screen and (max-width: $break-small-mid)
+    display: block
+
+.hide-only-small
+  display: block
+
+  @media only screen and (max-width: $break-small-mid)
+    display: none
+
+.show-only-large
+  display: none
+
+  @media only screen and (min-width: $break-mid-large)
+    display: block
+
+.hide-only-large
+  display: block
+
+  @media only screen and (min-width: $break-mid-large)
+    display: none
+
+// button styles
+
+.btn, .btn-set a, nav li a
+  padding-bottom: 5px
+  text-align: center
+  position: relative
+  font-weight: 500
+  overflow: hidden
+
+  &:hover
+    color: $black
+
+  &:before
+    bottom: 0
+    width: 0px
+    height: 2px
+    background: $yellow
+
+  &:hover:before
+    width: 100%
+    left: 0
+
+    span
+      position: relative
+      color: inherit
+      text-decoration: none
+      overflow: hidden
+
+  &:before, &:after, span:before, span:after
+    content: ''
+    position: absolute
+    transition: width .5s ease
+
+
+
+//mixins
+
+@mixin default-button
+  border-radius: 4px
+  background-color: $light-blue
+  margin: 0 5px
+  color: #FFF
+  text-transform: uppercase
+  font-family: $heading-font
+  padding: 10px 25px
+
+@mixin admin-button
+  border: 1px solid #88BFFF
+  border-radius: 5px
+  background-color: #4A90E2
+  box-shadow: none
+  padding: 13px 25px
+  margin-top: -1px
+
+@mixin top-border
+  border-top: 1px solid $off-white
+
+@mixin bottom-border
+  border-bottom: 1px solid $off-white
+
+@mixin top-border-blue
+  border-top: 1px solid $dark-blue
